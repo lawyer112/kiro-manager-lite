@@ -1,5 +1,6 @@
-// Kiro CLI keeps its session separately from the IDE. On macOS it can read its
-// SQLite database without a Keychain item (verified with kiro-cli 2.24.1).
+// Kiro CLI keeps its session separately from the IDE. On macOS its v1 chat
+// engine can use the SQLite session without a Keychain item (verified with
+// kiro-cli 2.24.1). The v2 engine currently rejects this synchronized session.
 // Remove a legacy social Keychain item so it cannot override the selected
 // SQLite account. Never pass tokens to a subprocess or log them.
 import { spawn } from 'node:child_process'

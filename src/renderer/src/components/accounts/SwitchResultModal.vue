@@ -87,7 +87,7 @@ async function restart(): Promise<void> {
       type="success"
       show-icon
       message="Kiro CLI 凭证已写入"
-      description="可在新的终端运行 kiro-cli whoami 确认账号。"
+      description="这只确认写入成功。请用 kiro-cli chat --agent-engine v1 --no-interactive '你好' 验证实际对话；Kiro CLI 2.24.1 的 v2 引擎可能仍报凭证错误。"
       style="margin-bottom: 12px"
     />
     <a-alert
